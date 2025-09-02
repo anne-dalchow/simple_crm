@@ -1,0 +1,25 @@
+.mat-drawer-container {
+  height: 100dvh;
+
+  .sidenav {
+    width: 300px;
+
+    .logo-container {
+      border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+      padding: 0 1rem;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  mat-toolbar,
+  mat-toolbar-row {
+    min-height: 56px;
+    height: 56px;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+  }
+}
