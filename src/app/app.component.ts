@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
+import { MatToolbar, MatToolbarRow } from '@angular/material/toolbar';
+import { MatDrawerContainer, MatDrawer } from '@angular/material/sidenav';
+import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -15,13 +12,12 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     CommonModule,
     RouterOutlet,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatIconModule,
     RouterLink,
-    MatButtonModule,
-    MatTooltipModule,
-    MatDialogModule,
+    MatDrawerContainer,
+    MatDrawer,
+    MatIcon,
+    MatToolbar,
+    MatToolbarRow,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

@@ -10,6 +10,11 @@
       min-height: 56px;
       display: flex;
       align-items: center;
+
+      .logo {
+        height: 35px;
+        width: auto;
+      }
     }
 
     .menu-items {
@@ -22,7 +27,7 @@
         gap: 1rem;
 
         &:hover {
-          background-color: rgba(0, 0, 0, 0.04);
+          background-color: rgba(255, 255, 255, 0.1);
         }
 
         &:focus {
@@ -36,6 +41,9 @@
   mat-toolbar-row {
     min-height: 56px;
     height: 56px;
+    background-color: #6bb18f;
+    display: flex;
+    gap: 1rem;
   }
 
   .menu-icon {
@@ -44,5 +52,5 @@
 }
 
 .router-container {
-  padding: 1rem 0 0 3.5rem;
+  padding: 3.5rem 5.5rem;
 }

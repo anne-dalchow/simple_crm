@@ -1,0 +1,79 @@
+:host ::ng-deep .mat-mdc-tab-group,
+:host ::ng-deep .mat-mdc-tab-nav-bar {
+  --mdc-tab-indicator-active-indicator-color: #8ee7bc;
+  --mat-tab-header-disabled-ripple-color: rgba(255, 255, 255, 0.5);
+  --mat-tab-header-pagination-icon-color: white;
+  --mat-tab-header-inactive-label-text-color: rgba(255, 255, 255, 0.6);
+  --mat-tab-header-active-label-text-color: #8ee7bc;
+  --mat-tab-header-active-ripple-color: #8ee7bc;
+  --mat-tab-header-inactive-ripple-color: #8ee7bc;
+  --mat-tab-header-inactive-focus-label-text-color: rgba(255, 255, 255, 0.6);
+  --mat-tab-header-inactive-hover-label-text-color: rgba(255, 255, 255, 0.6);
+  --mat-tab-header-active-focus-label-text-color: #8ee7bc;
+  --mat-tab-header-active-hover-label-text-color: #8ee7bc;
+  --mat-tab-header-active-focus-indicator-color: #8ee7bc;
+  --mat-tab-header-active-hover-indicator-color: #8ee7bc;
+}
+
+:host ::ng-deep .mat-mdc-tab-header {
+  background-color: #afafaf3d !important;
+}
+
+:host ::ng-deep .mat-mdc-icon-button.mat-primary {
+  --mdc-icon-button-icon-color: #80daae;
+  ;
+  --mat-icon-button-state-layer-color: #8ee7bc;
+  ;
+  --mat-icon-button-ripple-color: hsla(151, 31%, 56%, 0.1);
+}
+
+:host ::ng-deep .mat-mdc-icon-button.mat-accent {
+  --mdc-icon-button-icon-color: #8becbe;
+  ;
+  --mat-icon-button-state-layer-color: #81dfb2;
+  ;
+  --mat-icon-button-ripple-color: hsla(151, 31%, 56%, 0.1);
+}
+
+
+
+.user-detail-card {
+  color: white;
+  min-height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1.5rem;
+
+  .profilbild {
+    width: 100px;
+    filter: hue-rotate(190deg) brightness(1.25) contrast(0.75);
+  }
+
+  .user-details {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+
+.mat-mdc-card-header {
+  align-items: center;
+  justify-content: space-between;
+
+  edit-menu-button {
+    cursor: pointer;
+  }
+}
+
+.edit-menu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.tab-card {
+  min-height: 200px;
+}

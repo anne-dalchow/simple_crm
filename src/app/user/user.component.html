@@ -1,4 +1,21 @@
-<p>user works!</p>
+<mat-card class="user-table-card">
+  <table class="user-table">
+    <tr>
+      <th color="accent">Name</th>
+      <th>E-Mail</th>
+      <th>City</th>
+    </tr>
+    @for ( user of allUsers; track $index) {
+    <tr (click)="navigateToUser(user.id)">
+      <td>{{user.firstName}} {{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.city}}</td>
+    </tr>
+    }
+  </table>
+</mat-card>
+
+
 <button (click)="openDialog()" mat-fab class="add-user-btn" aria-label="Add user" matTooltip="Add user"
   [matTooltipPosition]="position">
   <mat-icon>add</mat-icon>
